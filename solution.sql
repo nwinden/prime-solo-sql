@@ -24,7 +24,7 @@ select username, account_balance
   limit 3;
 --Get all users with account balances that are more than $100.
 select * from syntax_practice
-  where account_balance <100
+  where account_balance > 100
 --Add a new record.
 insert into syntax_practice (username, city, transactions_completed, transactions_attempted, account_balance) values ('noah', 'minneapolis', 0, 9001, 10000.00);
 --The bank is losing money in Miami and Phoenix and needs to unload low transaction customers: Delete users that reside in miami OR phoenix and have completed fewer than 5 transactions.
